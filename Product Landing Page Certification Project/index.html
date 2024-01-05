@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title></title>
+        <link rel="icon" type="image/png" href="https://cdn0.iconfinder.com/data/icons/hipster-bright-fill/60/007_-_Coffee_Cup-512.png">
+        <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+        <title>Espresso Cup</title>
     </head>
     <body>
         <header id="header">
-            <img id="header-img" src="https://cdn0.iconfinder.com/data/icons/hipster-bright-fill/60/007_-_Coffee_Cup-512.png" alt="logo">
+            <div id="logo">
+                <a class="nav-link" href="#hero">
+                    <img id="header-img" src="https://cdn0.iconfinder.com/data/icons/hipster-bright-fill/60/007_-_Coffee_Cup-512.png" alt="logo">
+                </a>
+                
+            </div>
+            
             <nav id="nav-bar">
                 <ul>
                     <li >
@@ -28,11 +36,14 @@
 
         <!--HERO SECTION-->
         <div id="hero">
-            <div id="hero_text" class="hero_text">
-                <p>crafted to perfection</p>
-                <p>ESPRESSO</p>
-                <p>CUP</p>
-                <p>Elevate Your Sip, Enrich Your Moments.</p>
+            <div id="hero_text" class="hero-text">
+                <!--
+                <p class="italic" class="hero_sub">crafted to perfection</p>
+                -->
+                
+                <p class="hero_big">ESPRESSO</p>
+                <p class="hero_big">CUP</p>
+                <p class="italic">Elevate Your Sip, Enrich Your Moments.</p>
             </div>
             <div id="hero_img_div" class="hero_img_div">
                 <img id="hero_img" src="https://images.pexels.com/photos/6312156/pexels-photo-6312156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a cup of coffee">
@@ -40,15 +51,16 @@
         </div>
 
         <!--PRODUCTS SECTION-->
-        <div id="products">
-            <h2>PRODUCTS</h2>
-            <img src="https://images.pexels.com/photos/733763/pexels-photo-733763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Espresso">
-            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cappuccino">
-            <img src="https://images.pexels.com/photos/4195612/pexels-photo-4195612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Americano">
-            <img src="https://images.pexels.com/photos/4108281/pexels-photo-4108281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Croissant">
-            <img src="https://images.pexels.com/photos/4110541/pexels-photo-4110541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cookies">
-            <img src="https://images.pexels.com/photos/3209101/pexels-photo-3209101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pasta">
-
+        <div id="products" class="brown">
+            <h2 class="title white">PRODUCTS</h2>
+            <div class="gallery">
+                <img src="https://images.pexels.com/photos/733763/pexels-photo-733763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Espresso">
+                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cappuccino">
+                <img src="https://images.pexels.com/photos/4195612/pexels-photo-4195612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Americano">
+                <img src="https://images.pexels.com/photos/4108281/pexels-photo-4108281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Croissant">
+                <img src="https://images.pexels.com/photos/4110541/pexels-photo-4110541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cookies">
+                <img src="https://images.pexels.com/photos/3209101/pexels-photo-3209101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pasta">
+            </div>
         </div>
 
         <!--LOCATION-->
@@ -56,8 +68,8 @@
             <div>
                 <iframe 
                 id="video"
-                width="560" 
-                height="315" 
+                width="656" 
+                height="369" 
                 src="https://www.youtube.com/embed/hA36pbPI6tg?si=txBtU2tcOrm3ZFO5" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -67,11 +79,26 @@
             </div>
             <div>
                 <h2>LOCATION</h2>
-                <p>Visit us at 127 Main Street for an unforgettable coffee experience.</p>
+                <p class="italic text">Visit us at 127 Main Street for an unforgettable coffee experience.</p>
             </div>
         </div>
 
-        <div>
+        <div class="brown">
+            <div id="subs">
+                <p class="text white move">STAY CONNECTED</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" name="email" type="email" placeholder="Enter email here...">
+                    <input id="submit" type="submit" value="SUBSCRIBE" class="button">
+                </form>
+            </div>
+
+            <hr>
+
+            <div id="contact">
+                <h3 id="contact_us" class="white">CONTACT US</h3>
+                <p class="text white">info@espressocupcafe.com</p>
+                <p class="text white">Phone: (032) 123-4567</p>
+            </div>
             
         </div>
     </body>
