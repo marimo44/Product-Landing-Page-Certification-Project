@@ -213,4 +213,11 @@ img{
     .hero_big{
         font-size:80px;
     }
+
+    #video{
+        width:auto;
+        height: auto;
+    }
+
+
   }
